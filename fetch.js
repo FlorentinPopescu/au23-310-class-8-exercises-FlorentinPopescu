@@ -1,7 +1,16 @@
-// create api-key.js file with const API_KEY="your_api_key" in this same directory to use
-const BASE_URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
+// ./fetch.js
 
-const url = `${BASE_URL}?q=tech&api-key=${API_KEY}`;
+// !!! UNDER WORK !!!
+
+/* --------------------------------------------- */
+// create api-key.js file with const API_KEY="your_api_key" in this same directory to use
+const API_KEY = "eh7c80hvSfet5CLcSYeZRrSGLzq4AWYX";
+
+const BASE_URL = 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json';
+//const BOOKS_URL = "https://api.nytimes.com/svc/books/v3/lists/{2022-03-12}/{hardcover-fiction}.json";
+
+/* --------------------------------------------- */
+const url = `${BOOKS_URL}?api-key=${API_KEY}`;
 
 fetch(url)
   .then(function(data) {
